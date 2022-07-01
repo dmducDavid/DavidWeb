@@ -1,0 +1,177 @@
+/*For navigation bar*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  background: linear-gradient(rgb(213, 190, 213), white);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
+.nav{
+  background-color: white;
+  background-repeat: no-repeat; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.nav-links{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+li{
+  list-style: none;
+}
+
+.login{
+  background-color: blue;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  padding:10px 30px;
+  color: white;
+  text-align: center;
+}
+
+.menu{
+  background-color: white;
+  background-size: 10px;
+  color: black;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+.login:hover{
+  background-color: darkblue;
+}
+
+.menu:hover{
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  padding:10px 20px;
+  color: blue;
+}
+
+/*For footer*/
+
+footer{
+  background-color: darkblue;
+  color:white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.contact-title{
+  margin-top:  40px;
+}
+
+.logo-sign-in{
+  margin-top: 50px;
+  margin-left: 380px;
+}
+
+.logo-sign-in img{
+  margin-top: -15px;
+}
+
+.logo-sign-in p{
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.contact-info{
+  margin-right: 100px;
+}
+
+.contact-info-list{
+  padding-left: 0;
+}
+
+.sign-in-footer:hover{
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  padding:0;
+  color: yellow;
+}
+/*Time and Weather*/
+/*1.Time*/
+
+.split{
+  height: 70%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  margin-top: 74px;
+  padding-top: 20px;
+}
+
+.time{
+  left:0;
+  text-align: center;
+  color: white;
+  background-color: lightgreen;
+}
+
+.hh-mm-ss{
+  font-size: 50px;
+  margin-top: 14.5%;
+}
+
+.clock-time{
+  font-size: 100px;
+  font-weight:bold;
+  margin-top: 15px;
+}
+
+.date-time{
+  font-size: 25px;
+}
+
+/*2.Weather*/
+.weather{
+  right:0;
+  text-align: center;
+  background-color: lightblue;
+  color: white;
+}
+
+.weather-icon img{
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.temperature-value{
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.temperature-description{
+  font-size: 50px;
+}
+
+.location{
+  font-size: 25px;
+}
+

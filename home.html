@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8" />
+	    <link rel="stylesheet" href="webStyle.css">
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	    <title>Plan Your Day</title>
+	  </head>
+	  <body>
+		<!--Navigation bar-->
+	    <nav class = "nav">
+	    	<a href = "./home.html">
+	    		<img src = "./img/logo/PYDLogo.svg" alt = "Plan Your Day">
+	    	</a>
+	        <ul class="nav-links">
+	            <li><a class = 'menu' href = "./home.html">Home</a></li>
+	            <li><a class = 'menu'>Product</a></li>
+	            <li><a class = 'menu'>Team</a></li>
+	            <li><a class = 'menu'>Contact</a></li>
+	            <li><a class = 'menu'>Sign up</a></li>
+	            <li><a class = 'login'>Sign in</a></li>   
+	        </ul>
+	    </nav>
+
+		<!--Body (split screen with 2 options: Date & Time, Weather)-->
+		<div>
+			<div class="split time">
+				<h1>Date and Time</h1>
+				<div class = "hh-mm-ss">
+					<p>hh&nbsp: mm</p>
+				</div>
+				<div id = "clockDisplay" class = "clock-time">
+					<script src = "timeClock.js"></script>
+				</div>
+				<div id = "dateDisplay" class = "date-time">
+					<script src = "dateNow.js"></script>
+				</div>
+			</div>
+			<div class="split weather">
+				<h1>Weather</h1>
+				<div class = "weather-icon">
+					<!--<img src = "./icons/black/svg-black/unknown.svg" alt = "unknown">-->
+				</div>
+				
+				<div class = "temperature-value">
+					<p>-</p>
+				</div>
+				<div class = "temperature-description">
+					<p>-</p>
+				</div>
+				<div class = "location">
+					<p>-,-</p>
+				</div>
+				<script src = "weather.js"></script>
+			</div>
+		</div>
+	  </body>
+
+	  <!--Footer-->
+	  <footer>
+		    <div class="container">
+		    	<div class="logo-sign-in">
+	                <img src = "./img/logo/PYDLogoFooter.svg" alt = "Plan Your Day">
+	                <p class = "sign-in-footer">Sign in</p>    
+	            </div>
+	            <div class="contact-info">
+	                <h3 class="contact-title">Contact to Plan Your Day</h3>
+	                <ul class="contact-info-list">
+	                    <li>Address: 227 Nguyen Van Cu Street, Ward 4, District 5, Ho Chi Minh City</li>
+	                    <li>Facebook:</li>
+	                    <li>Gmail:</li>
+	                    <li>Tel:</li>
+	                </ul>
+	                <br>
+	            </div>
+		    </div>
+	  </footer>
+	</html>
